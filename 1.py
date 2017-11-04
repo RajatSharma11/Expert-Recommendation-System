@@ -31,8 +31,7 @@ for i in range(len(files)):
 	vect = np.mean(sklearn_representation.todense(), axis=0).tolist()
 	for key in sklearn_tfidf.vocabulary_:
 		reviwer_Score_dic[key] = vect[0][sklearn_tfidf.vocabulary_[key]]
-	reviwer_Score_dic = sorted(reviwer_Score_dic.items(), key=lambda x: x[1])
-	#print(reviwer_Score_dic)	
+	reviwer_Score_dic = sorted(reviwer_Score_dic.items(), key=lambda x: x[1],reverse = True)	
 	g = []
 	n = int(len(reviwer_Score_dic) * 0.2)
 	for f in range(n):
@@ -40,7 +39,6 @@ for i in range(len(files)):
 		key,value = item
 		g.append(key)
 	reviwer_keyword_dic[files[i][:-4]] = g 
-	#print(reviwer_keyword_dic)
 
 input_title = open("Expert_Finding_Data/titles.txt","r", encoding='utf8',  errors='ignore')
 input_abstract = open("Expert_Finding_Data/abstracts.txt","r", encoding='utf8',  errors='ignore')
@@ -87,7 +85,7 @@ for name in writers_name_list:
 			#print(type(reviwer_keyword_dic[reviewer]))
 			jaccard_dic[reviewer] = jaccard_similarity(input_dic[index],reviwer_keyword_dic[reviewer])
 	#print(jaccard_dic)
-	jaccard_dic = sorted(jaccard_dic.items(), key=lambda x: x[1])
+	jaccard_dic = sorted(jaccard_dic.items(), key=lambda x: x[1],reverse = True)
 	#print(jaccard_dic)
 	g = []
 	n = 10
@@ -98,7 +96,6 @@ for name in writers_name_list:
 	final_dic[index] = g
 	index += 1
 print(final_dic)
-
 
 
 
