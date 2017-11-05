@@ -83,7 +83,7 @@ for name in writers_name_list:
 			continue;
 		else:
 			jaccard_dic[reviewer] = jaccard_similarity(input_dic[index],reviwer_keyword_dic[reviewer])
-	jaccard_dic = sorted(jaccard_dic.items(), key=lambda x: x[1]))
+	jaccard_dic = sorted(jaccard_dic.items(), key=lambda x: x[1])
 	g = []
 	n = 10			# number of reviewers to be assigned
 	for f in range(n):
