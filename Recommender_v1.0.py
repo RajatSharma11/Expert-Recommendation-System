@@ -43,7 +43,7 @@ def recommend():
 		reviwer_Score_dic = sorted(reviwer_Score_dic.items(), key=lambda x: x[1])
 		#print(reviwer_Score_dic)	
 		g = []
-		n = int(len(reviwer_Score_dic) * 0.2)
+		n = int(len(reviwer_Score_dic) * 0.5)
 		for f in range(n):
 			item = reviwer_Score_dic.pop()
 			key,value = item
