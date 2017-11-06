@@ -21,7 +21,4 @@ document of the expert). (ii) Path to a directory containing documents for the c
 For a basic introduction to the problem and to have understanding of methods that can be applied please see:
 http://www.cs.toronto.edu/~lcharlin/papers/tpms.pdf
 
-
-
-
-
+![image](https://github.com/RajatSharma11/Expert-Recommendation-System/blob/master/ScreenShot/GUI.png)
