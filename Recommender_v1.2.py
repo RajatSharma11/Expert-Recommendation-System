@@ -80,7 +80,7 @@ def recommend():
                 reviwer_Score_dic[k] = vect[0][sklearn_tfidf.vocabulary_[k]]
             reviwer_Score_dic = sorted(reviwer_Score_dic.items(), key=lambda x: x[1])
             g = []
-            n = int(len(reviwer_Score_dic) * 0.2)
+            n = int(len(reviwer_Score_dic) * 0.5)
             for f in range(n):
                 item = reviwer_Score_dic.pop()
                 k3,value = item

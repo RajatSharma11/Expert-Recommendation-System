@@ -1,4 +1,4 @@
-# Expert-Recommendation-System
+﻿# Expert-Recommendation-System
 Expert Systems are used in various places such as (i) finding suitable candidates for a job, (ii) finding experts to evaluate a 
 project or grant proposal, (iii) finding suitable law-yers given a case description, (iv) finding suitable experts to answer 
 questions in technical forums, tourism sites etc. This is short list of a much bigger application area with huge possibility of 
@@ -20,3 +20,8 @@ document of the expert). (ii) Path to a directory containing documents for the c
 
 For a basic introduction to the problem and to have understanding of methods that can be applied please see:
 http://www.cs.toronto.edu/~lcharlin/papers/tpms.pdf
+
+
+
+
+
